@@ -1,0 +1,247 @@
+.main-product{
+  display: flex;
+  justify-content: center;
+}
+.product-content{
+  max-width: 1530px;
+  width: 100%;
+}  
+.product-title{
+  font-size: 32px;
+  font-weight: 700;
+  padding-bottom: 28px;
+}
+.box-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  gap: 30px;
+}
+.box{
+  position: relative;
+  cursor: pointer;
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.box img {
+  width: 100%; /* Ensure images fill their containers */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 12px; /* Add rounded corners */
+  transition: 0.5s all ease-in-out;
+  
+}
+
+/* The Transformation */
+.box img:hover{
+  transform: scale(1.5);
+}
+
+/* ჰოვერი დავგუგლე */
+
+
+.box-overlay{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  top: 255px;
+  padding-left: 24px;
+  background-color: #2B281A4D;
+  width: 360px;
+  height: 65px;
+  border-radius: 0 0 12px 12px;
+  width: 100%; /* Make overlay full width */
+  height: auto; /* Allow overlay height to adjust based on content */
+  bottom: 3px; /* Align overlay to the bottom */
+}
+.box-overlay p,
+.box-overlay2 p{
+  font-size: 16px;
+  font-weight: 700;
+  color: white;
+}
+.box-overlay2{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  top: 165px;
+  padding-left: 24px;
+  background-color: #2B281A4D;
+  width: 360px;
+  height: 65px;
+  border-radius: 0 0 12px 12px;
+  width: 100%; /* Make overlay full width */
+  height: auto; /* Allow overlay height to adjust based on content */
+  bottom: 6px; /* Align overlay to the bottom */
+}
+.title-text{
+  display: flex;
+  justify-content: space-between;
+}
+.title-text p2{
+  font-size: 18px;
+  font-weight: 500;
+  color: #D4211C;
+  cursor: pointer;
+}
+/* აქ ფოტოებზე ბორდერ რადიუს ვერ დავამატე 
+პროდუქტებში რაც მაქვს პირდაპირ ეგეთი ფოტოები ჩავიწერე და აქ რადიუსიანები ვერ ვნახე */
+
+/* ასევე გრიდის რესპონსივში დამეხმარა gpt */
+
+
+
+.main-container{
+  display: flex;
+  gap: 30px;
+}
+/* (რატომღაც თავიდან left-container da insidebox მქონდა absouleteti გაკეთებული და მერე ჩავანაცვლე ფლექსით) */
+
+.left-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1010px;
+  height: 344px;
+  background-color: #091F2C0F;
+  border-radius: 24px;
+}
+.left-container-insidebox{
+  width: 478px;
+  height: 268px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  gap: 32px;
+  padding: 36px;
+}
+.left-isidebox-content{
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.left-isidebox-content img{
+  border-radius: 50%;
+  padding: 7px;
+}
+.left-container p{
+  color: #2B281A99;
+  font-size: 18px;
+  font-weight: 400;
+}
+.container-img{
+  padding: 38px;
+}
+.right-container{
+  width: 490px;
+  height: 342px;
+  background-color: #091F2C0F;
+  border-radius: 24px;
+  position: relative;
+}
+.right-container-main h1{
+  padding: 32px;
+  font-size: 18px;
+  font-weight: 700;
+}
+.right-container-main h2{
+  padding-left: 32px;
+  padding-bottom: 12px;
+  font-size: 14px;
+  font-weight: 400;
+}
+.right-container-searchbar{
+  padding-left: 32px;
+  position: relative;
+}
+.right-container input{
+  width: 426px;
+  height: 44px;
+  border-radius: 12px;
+  border: none;
+  padding-left: 23px;
+}
+.right-container-searchbar button{
+  position: absolute;
+  width: 165px;
+  height: 40px;
+  border: none;
+  color: white;
+  background-color: #D4211C;
+  border-radius: 12px;
+  left: 295px;
+  top: 2px;
+  cursor: pointer;
+}
+.right-container-main-box{
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+.right-container-box1,
+.right-container-box2{
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  gap: 6px;
+  width: 198px;
+  height: 111px;
+  border-radius: 12px;
+  background-color: white;
+  padding: 10px 0 0 10px;
+  cursor: pointer;
+}
+.right-container-box1 img,
+.right-container-box2 img{
+  width: 27.95px;
+  height: 28.8px;
+  background-color: #F7F9FB;
+}
+.right-container-box1 p1,
+.right-container-box2 p1{
+  color: #2B281A99;
+}
+.right-container-box1 h1,
+.right-container-box2 h1{
+  font-weight: 00;
+  font-size: 14px;
+}
+
+
+.main-text{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 30px;
+  padding-top: 60px;
+}
+.title-main-text{
+  display: flex;
+  align-items: center;
+  padding-bottom: 30px;
+  gap: 8px;
+}
+.title-main-text h1{
+  font-size: 16px;
+  font-weight: 700;
+}
+.main-text-container p{
+  font-size: 16px;
+  font-weight: 400;
+  color: #2B281A80;
+}
+.bullet{
+  display: flex;
+  justify-content: center;
+  padding-top: 14px;
+  padding-bottom: 70px;
+}
+@media screen and (max-width: 1800px) {
+  .product-content{
+    padding: 0 20px; 
+  }
+}

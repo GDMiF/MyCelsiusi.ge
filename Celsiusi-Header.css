@@ -1,0 +1,118 @@
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+input{
+  outline: none;
+  /* დამავიწყდა ამის დაწერა, ბოლოს დავამატე და ყველას ცალცალკე რომ არ მივუწერო ბარემ ერთიანად გავაკეთე */
+}
+header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.header-main{
+  max-width: 1800px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.header-logo{
+  width: 230px;
+  cursor: pointer;
+}
+.header-searchBar{
+  position: relative;
+}
+.header-searchBar input{
+  width: 805px;
+  height: 52px;
+  border: none;
+  outline: none;
+  border-radius: 12px;
+  padding: 14px 20px;
+  background-color: #091F2C0F;
+}
+.header-searchBar ::placeholder{
+  color: 091F2C0F;
+  opacity: 60%;
+}
+.header-seachIcon{
+  position: absolute;
+  right: 15px;
+  top: 13px;
+  cursor: pointer;
+}
+.header-nav{
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.header-nav-contact,
+.header-nav-cart{
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/* .header-nav img:hover{
+  background-color: #D4211C;
+  border-radius: 50%;
+}  */
+
+/* აქ ვერ გავაკეთე კარგად სავარაუდოდ სხვა ფოთო უნდა ჩამესვა ჰოვერზე */
+
+.header-nav img{
+  width: 36px;
+}
+.header-nav p{
+  font-family: Helvetica;      
+  font-weight: 700;
+  font-size: 16px;                              
+}
+.header-main button{
+  color: white;
+  background-color: #D4211C;
+  border: none;
+  border-radius: 12px;
+  font-family: 'Helvetica Neue', sans-serif;     
+  font-weight: 700;
+  font-size: 16px;    
+  width: 147px;
+  height: 47px; 
+  cursor: pointer;
+}
+.header-profile{
+  display: none;
+  cursor: pointer;
+}
+.header-menu{
+  display: none;
+  cursor: pointer;
+}
+
+
+.navbar{
+  display: flex;
+  align-items: center;
+  width: 1529px;
+  gap: 48px;
+}
+li{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+.navbar-flag{
+  display: flex;
+  justify-content: right;
+  margin-left: auto;  /*  დროშას მარჯვნინვ ვერ ვწევდი შემეძლო ბევრი დივის დამათებით მაგრამ მეგონა არასწორი იქნებოდა და gpt-ის ვკითხე და ეს კომანდა მითხრა */
+  cursor: pointer;
+}
